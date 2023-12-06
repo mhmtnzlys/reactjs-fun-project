@@ -1,0 +1,11 @@
+.image-container {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.image-slider {
+  width: 100%;
+  height: auto;
+
+  transition: transform 1s ease-in-out;
+}

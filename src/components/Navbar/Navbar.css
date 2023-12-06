@@ -1,0 +1,47 @@
+.navbar-buttons {
+  display: flex;
+}
+
+.main-navbar-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: tan;
+}
+
+.left-navbar {
+  padding: 20px;
+  justify-content: flex-end;
+}
+.logo-container {
+  text-align: center;
+  padding-left: 30px;
+  height: 60px;
+  width: 50px;
+}
+
+.logo-container h1 {
+  margin: 0;
+  color: #111;
+}
+
+.right-navbar {
+  padding: 20px;
+  justify-content: flex-start;
+}
+
+.navbar-button {
+  font-size: 1.8rem;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: top;
+  transition: opacity 0.2s ease-out;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 9px 30px 12px;
+  cursor: pointer;
+}
+.navbar-button:hover {
+  color: #333;
+}

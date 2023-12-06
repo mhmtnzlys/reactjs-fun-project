@@ -1,11 +1,26 @@
-.image-container {
+.container {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  max-width: 100%;
+  position: relative;
 }
 
-.image-slider {
+.bg-image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+}
 
-  transition: transform 1s ease-in-out;
+.bg-image.show {
+  opacity: 1;
+}
+
+.bg-image.showing {
+  opacity: 0;
 }

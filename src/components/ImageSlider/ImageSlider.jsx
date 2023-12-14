@@ -6,12 +6,12 @@ const ImageSlider = (props) => {
   const [opacity, setOpacity] = useState(1);
 
   const changeImage = () => {
-    setOpacity(0); // Geçiş başladığında opacity'yi sıfıra ayarla
+    setOpacity(0.5);
 
     setTimeout(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % props.images.length);
-      setOpacity(1); // Yeni resimde opacity'yi bir yap
-    }, 10000); // Timeout süresi, geçişin tamamlanma süresinden kısa olmalı
+      setOpacity(1); 
+    }, 10000);
   };
 
   useEffect(() => {

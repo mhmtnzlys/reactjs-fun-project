@@ -16,7 +16,7 @@ export default function Navbar() {
                     <div className='navbar-buttons'>
                         <button onClick={() => navigate('/')} className='navbar-button'>AboutUs1</button>
                         <button onClick={() => navigate('/contact')} className='navbar-button'>Contact2</button>
-                        <button onClick={() => navigate('/aboutus')} className='navbar-button'>AboutUs3</button>
+                        <button onClick={() => navigate('/test')} className='navbar-button'>Test3</button>
                         <button onClick={() => navigate('/contact')} className='navbar-button'>Contact4</button>
                     </div>
                 </div>

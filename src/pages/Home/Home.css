@@ -1,19 +1,27 @@
-  .container {
+  .home-container {
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden; 
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .slideshow {
+    margin: 0 auto;
+    overflow: hidden;
   }
   
-  .bg-image {
+  .slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1500ms;
+    margin-bottom: -3px;
+  }
+  
+  .slide {
+    display: inline-block;
+    height: 80vh;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .mySlides {
-    display: none;
-  }
-  .show {
-    display: block;
+    /* object-fit: cover; */
   }

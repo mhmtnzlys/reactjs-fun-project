@@ -31,7 +31,7 @@ function App() {
         </a>
         
 <div>
-      {data ? <pre>{JSON.stringify(data.message, null, 2)}</pre> : 'Loading...'}
+{/*       {data ? <pre>{JSON.stringify(data.message, null, 2)}</pre> : 'Loading...'} */}
     </div>
 
       </header>

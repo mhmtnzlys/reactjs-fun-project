@@ -32,6 +32,7 @@ function App() {
         
 <div>
 {/*       {data ? <pre>{JSON.stringify(data.message, null, 2)}</pre> : 'Loading...'} */}
+Updated
     </div>
       </header>
     </div>

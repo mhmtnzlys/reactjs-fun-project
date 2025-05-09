@@ -1,40 +1,18 @@
-import logo from './logo.svg';
-// import React, { useState, useEffect } from 'react';
-import './App.css';
+// src/App.js
+import React, { useEffect } from 'react';
 
 function App() {
-  // const [data, setData] = useState(null);
-
-
-
-//   useEffect(() => {
-//     fetch('http://localhost:5000/api')
-//       .then(response => response.json())
-//       .then(data => setData(data))
-//       .catch(error => console.error('Error:', error));
-//   }, []);
-// console.log(data);
+  useEffect(() => {
+    // Bu örnekte Google yerine örnek bir API kullanıyoruz
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+      .then(response => response.json())
+      .then(data => console.log('Fetched data:', data))
+      .catch(error => console.error('Fetch error:', error));
+  }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
-        
-<div>
-{/*       {data ? <pre>{JSON.stringify(data.message, null, 2)}</pre> : 'Loading...'} */}
-Updated
-    </div>
-      </header>
+    <div>
+      <h1>Hello World</h1>
     </div>
   );
 }
